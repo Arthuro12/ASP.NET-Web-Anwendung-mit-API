@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "nYNq+70WkI03ZHxrvYzODj7Pp7L4OjqyDO4H14SV5xIBVCA9J1c6enN0wwCMGB10s4KLHXLb3PSGfASfmNEp9w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ThinkPad\\source\\repos\\TutoWebApplication1\\TutoWebApplication1\\TutoWebApplication1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ThinkPad\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

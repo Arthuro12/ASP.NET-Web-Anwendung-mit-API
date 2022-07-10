@@ -1,0 +1,62 @@
+﻿@{
+    Layout = "Layout";
+}
+
+@section title
+{
+    Startseite
+}
+
+@{
+    var varTest = "Das ist ein gespeicheerter Test";
+}
+
+@functions
+{
+    public string ShowMessage()
+    {
+        return "Hello Wordl!";
+    }
+}
+
+<h1>Startseite</h1>
+
+<h3>Heute ist der @DateTime.Now</h3>
+
+<p>Link mit C# : <a href="@Url.Action("Index", "Tutorials")">Link</a></p>
+<p>Dieser Text wird dynamisch geladen : @varTest</p>
+<p>Tag mit C# : @Html.ActionLink(" Besuchen Sie meine Tutos !", "Index", "Tutorials")</p>
+
+<ul>
+    @for (var i = 0; i < 4; i++)
+    {
+        var tutoTitle = "Tuto_" + i;
+        <li>Title : @tutoTitle</li>
+    }
+</ul>
+
+<div class="tuto">
+    <h3>Tuto der Woche</h3>
+    <h4>@ViewBag.title</h4>
+    <p><b>@ViewBag.price</b> EURO</p>
+    <img src="~/img/@ViewBag.img" width="300" /> 
+    <p>@ViewBag.description</p>
+</div>
+
+<div class="tuto">
+    <h3>Tuto der Woche</h3>
+    <h4>@Model.Title</h4>
+    <p><b>@Model.Price</b> EURO</p>
+    <p>@Model.Description</p>
+</div>
+
+<p>Dieser Text wird dynamisch geladen : @varTest</p>
+<p>Dieser Text wird dynamisch geladen : @varTest</p>
+
+<p>Aufruf der C#-Method : @ShowMessage()</p>
+
+<!-- <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+<h2>Tuto WPF</h2>
+<img src="img/wpf.png" />
+<p>49 EURO</p>
+<p><a href="#">Link</a></p> -->

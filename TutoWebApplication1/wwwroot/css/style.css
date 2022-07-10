@@ -1,0 +1,18 @@
+﻿body {
+    padding-top: 70px;
+}
+
+.tuto
+{
+    border: 4px solid black;
+    background-color: lightblue;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+.card 
+{
+    padding-top: 10px;
+    margin: 10px;
+    flex: auto;
+}

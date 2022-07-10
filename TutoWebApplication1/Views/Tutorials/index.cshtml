@@ -1,0 +1,34 @@
+﻿@{ 
+    Layout = "Layout";
+}
+
+@section title
+{
+Tutos-List
+}
+    <h1>Tutos-List</h1>
+    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+ 
+    <div class="container">
+        <div class="row">
+            @foreach (var tuto in Model)
+             {
+                <div class="card" style="width: 18rem;">
+                    <img src="/img/unity.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">@tuto.Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">@tuto.Price</h6>
+                        <p class="card-text">@tuto.Description.</p>
+                        <a href="@Url.Action("Details", "Tutorials", new { id = 1})" class="btn btn-primary">Tuto kaufen</a>
+                    </div>
+                </div>
+             }
+        </div>
+    </div>
+    
+    
+   <!--
+    <h2>Tuto WPF</h2>
+    <img src="img/wpf.png" />
+    <p>49 EURO</p>
+    <p><a href="#">Link</a></p> -->
